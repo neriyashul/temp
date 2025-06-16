@@ -1,5 +1,5 @@
 import './globals.css'
-import type { Metadata } from 'next'
+import { Metadata } from 'next'
 import { Inter } from 'next/font/google' // Changed from Geist to Inter as per new example
 import ThemeRegistry from '../components/ThemeRegistry';
 import { AppBar, Toolbar, Typography, Button, Container, Box } from '@mui/material';
@@ -7,7 +7,7 @@ import NextLink from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] }) // Initialize Inter font
 
-export const metadata: Metadata = {
+export const metadata = {
   title: 'Next.js MUI Showcase', // Updated title
   description: 'Examples of Next.js features with MUI', // Updated description
 }
@@ -23,8 +23,6 @@ const navItems = [
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
 }) {
   return (
     <html lang="en">

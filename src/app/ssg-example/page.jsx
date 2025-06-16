@@ -1,14 +1,7 @@
 import { Typography, Container, Paper, Box, List, ListItem, ListItemText } from '@mui/material';
 
-// This interface defines the structure of our post data
-interface Post {
-  id: number;
-  title: string;
-  body: string;
-}
-
 // This function will be called at build time to fetch data.
-async function getStaticData(): Promise<Post[]> {
+async function getStaticData() {
   // Simulate fetching data from an API or database
   // In a real application, this would be an actual fetch call.
   // For this example, we'll return some mock data.

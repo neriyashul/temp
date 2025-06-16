@@ -3,16 +3,10 @@
 import { useState, useEffect } from 'react';
 import { Typography, Container, Paper, Box, Button, CircularProgress } from '@mui/material';
 
-interface ApiResponse {
-  message: string;
-  timestamp: string;
-  randomNumber: number;
-}
-
 export default function ApiClientExamplePage() {
-  const [data, setData] = useState<ApiResponse | null>(null);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   const fetchData = async () => {
     setLoading(true);

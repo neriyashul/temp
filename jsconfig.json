@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "jsx": "preserve",
+    "checkJs": true, // Optional: enable type checking for JSDoc, can be removed if causing issues
+    "allowSyntheticDefaultImports": true, // Helps with some module interop
+    "esModuleInterop": true // Helps with some module interop
+  },
+  "include": ["next-env.d.js", "**/*.js", "**/*.jsx"],
+  "exclude": ["node_modules"]
+}
