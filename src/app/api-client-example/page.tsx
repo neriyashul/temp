@@ -24,8 +24,12 @@ export default function ApiClientExamplePage() {
       }
       const result = await response.json();
       setData(result);
-    } catch (e: any) {
-      setError(e.message);
+    } catch (e) {
+      if (e instanceof Error) {
+        setError(e.message);
+      } else {
+        setError('An unknown error occurred');
+      }
     } finally {
       setLoading(false);
     }

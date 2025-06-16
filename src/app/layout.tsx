@@ -33,15 +33,24 @@ export default function RootLayout({
           <AppBar position="static">
             <Toolbar>
               <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                <NextLink href="/" passHref legacyBehavior>
-                  <Button sx={{ color: 'white' }}>MUI App</Button>
-                </NextLink>
+                <Button
+                  component={NextLink}
+                  href="/"
+                  sx={{ color: 'white' }}
+                >
+                  MUI App
+                </Button>
               </Typography>
               <Box>
                 {navItems.map((item) => (
-                  <NextLink key={item.label} href={item.path} passHref legacyBehavior>
-                    <Button sx={{ color: 'white' }}>{item.label}</Button>
-                  </NextLink>
+                  <Button
+                    key={item.label}
+                    component={NextLink}
+                    href={item.path}
+                    sx={{ color: 'white' }}
+                  >
+                    {item.label}
+                  </Button>
                 ))}
               </Box>
             </Toolbar>

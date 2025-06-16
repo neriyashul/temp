@@ -1,4 +1,4 @@
-import { Typography, Container, Paper, Box } from '@mui/material';
+import { Typography, Container, Paper } from '@mui/material';
 
 export default function AboutPage() {
   return (

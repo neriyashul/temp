@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-export async function GET(request: Request) {
+export async function GET() {
   // In a real application, you might fetch data from a database,
   // call another service, or perform other backend tasks.
   const data = {
