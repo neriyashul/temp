@@ -15,7 +15,7 @@ export const metadata = {
 const navItems = [
   { label: 'Home', path: '/' },
   { label: 'About', path: '/about' },
-  { label: 'Contact', path: '/contact' },
+  { label: 'Contribute', path: '/contribute' },
   { label: 'SSR', path: '/ssr-example' },
   { label: 'SSG', path: '/ssg-example' },
   { label: 'API Client', path: '/api-client-example' },

@@ -3,6 +3,16 @@ import { red } from '@mui/material/colors';
 
 // Create a theme instance.
 const theme = createTheme({
+  direction: "rtl",
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          overflowY: "scroll",
+        },
+      },
+    },
+  },
   palette: {
     primary: {
       main: '#556cd6',
